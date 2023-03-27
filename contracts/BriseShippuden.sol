@@ -9,7 +9,7 @@ import "./interfaces/IPancakeRouter.sol";
 import "./interfaces/IPancakeFactory.sol";
 import "./helpers/TransferHelpers.sol";
 
-contract FlokiBrise is Ownable, AccessControl, ERC20 {
+contract BriseShippuden is Ownable, AccessControl, ERC20 {
   using SafeMath for uint256;
 
   address public taxCollector;
