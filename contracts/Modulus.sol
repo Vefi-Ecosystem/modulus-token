@@ -9,7 +9,7 @@ import "./interfaces/IPancakeRouter.sol";
 import "./interfaces/IPancakeFactory.sol";
 import "./helpers/TransferHelpers.sol";
 
-contract LittleBitgertWarrior is Ownable, AccessControl, ERC20 {
+contract Modulus is Ownable, AccessControl, ERC20 {
   using SafeMath for uint256;
 
   address public taxCollector;
@@ -22,7 +22,7 @@ contract LittleBitgertWarrior is Ownable, AccessControl, ERC20 {
   uint8 public taxPercentage;
   uint8 public liquidityPercentageForEcosystem = 10;
   uint256 public maxAmount = 700000000 * 10**18;
-  uint256 public minHoldOfTokenForContract = 100000 * 10**18;
+  uint256 public minHoldOfTokenForContract = 200000 * 10**18;
 
   bool public swapAndLiquifyEnabled;
   bool public inSwapAndLiquify;
